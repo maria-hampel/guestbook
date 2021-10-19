@@ -85,6 +85,7 @@ class GuestbookForm {
 	}
 	
 	/**
+	 * test
 	 * Returns a new {@link GuestbookEntry} using the data submitted in the request.
 	 *
 	 * @return the newly created {@link GuestbookEntry}
