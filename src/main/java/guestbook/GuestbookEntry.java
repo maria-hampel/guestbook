@@ -42,12 +42,13 @@ class GuestbookEntry {
 	 *
 	 * @param name must not be {@literal null} or empty
 	 * @param text must not be {@literal null} or empty
-	 * @param mail can be empty
+	 * @param mail must not be {@literal null} or empty
 	 */
 	public GuestbookEntry(String name, String text, String mail) {
 
 		Assert.hasText(name, "Name must not be null or empty!");
 		Assert.hasText(text, "Text must not be null or empty!");
+		Assert.hasText(mail, "Mail must not be null or empty!");
 
 		this.name = name;
 		this.text = text;
